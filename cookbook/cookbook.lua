@@ -1,10 +1,10 @@
 --Cookbook
 --Lucas Debatin e Guilherme Marques
 --04/05/2017
---vers„o 1.0
+--vers√£o 1.0
 --157 linhas
 
---Esse estilo de programaÁ„o utiliza vari·veis e globais e divide o programa em diversas funÁıes menores para diminuir a complexidade do cÛdigo
+--Esse estilo de programa√ß√£o utiliza vari√°veis e globais e divide o programa em diversas fun√ß√µes menores para diminuir a complexidade do c√≥digo
 
 --variaveis globais
 
@@ -12,10 +12,10 @@ data = {}
 words = {}
 word_freqs = {}
 
---funÁıes auxiliares
+--fun√ß√µes auxiliares
 
---funÁ„o para dividir uma string de palavras em diversas strings menores
---PRE: uma string n„o vazia e um caractere para servir de delimitador
+--fun√ß√£o para dividir uma string de palavras em diversas strings menores
+--PRE: uma string n√£o vazia e um caractere para servir de delimitador
 --POS: retorna uma string dividida com diversas substrings
 
 function split(s, delimiter)
@@ -26,9 +26,9 @@ function split(s, delimiter)
     return result;
 end
 
---funÁ„o para le um arquivo e grava seu conteudo em uma tabela
+--fun√ß√£o para le um arquivo e grava seu conteudo em uma tabela
 --PRE: um path valido para um arquivo
---POS: o arquivo È lido com sucesso e gravado na variavel 'data'
+--POS: o arquivo √© lido com sucesso e gravado na variavel 'data'
 
 function read_file(path)
 
@@ -37,9 +37,9 @@ function read_file(path)
 
 end
 
---funÁ„o para filtrar os caracteres que n„o ser„o usados na tabela 'data' e passar todas as letras em mai˙sculo para min˙sculo
---PRE: existe uma tabela 'data' n„o vazia
---POS: alteraÁıes foram feitas com sucesso
+--fun√ß√£o para filtrar os caracteres que n√£o ser√£o usados na tabela 'data' e passar todas as letras em mai√∫sculo para min√∫sculo
+--PRE: existe uma tabela 'data' n√£o vazia
+--POS: altera√ß√µes foram feitas com sucesso
 
 function filter_chars_and_normalize()
 
@@ -48,9 +48,9 @@ function filter_chars_and_normalize()
 
 end
 
---funÁ„o para passar a tabela 'data' para um array de strings
+--fun√ß√£o para passar a tabela 'data' para um array de strings
 --PRE: existe uma tabela 'data' filtrada e normalizada
---POS: tabela'words'È preenchida com sucesso
+--POS: tabela'words'√© preenchida com sucesso
 
 function scan()
 
@@ -60,9 +60,9 @@ function scan()
 
 end
 
---funÁ„o para remover as stop words da tabela 'words'
---PRE: existe uma tabela 'words' n„o vazia
---POS: tabela'words'È alterada com sucesso
+--fun√ß√£o para remover as stop words da tabela 'words'
+--PRE: existe uma tabela 'words' n√£o vazia
+--POS: tabela'words'√© alterada com sucesso
 
 function remove_stop_words()
 
@@ -80,9 +80,9 @@ function remove_stop_words()
 
 end
 
---funÁ„o para calcular a frequÍncia em que cada palavra aparece no texto
---PRE: existe uma tabela 'words' n„o vazia
---POS: a tabela 'word_freqs' È preenchida em que cada palavra tem um valor indicando sua frequencia
+--fun√ß√£o para calcular a frequ√™ncia em que cada palavra aparece no texto
+--PRE: existe uma tabela 'words' n√£o vazia
+--POS: a tabela 'word_freqs' √© preenchida em que cada palavra tem um valor indicando sua frequencia
 
 function frequencies()
 
@@ -97,8 +97,8 @@ function frequencies()
 
 end
 
---funÁ„o auxiliar para ordenar
---PRE: recebe uma tabela e um tipo de ordenaÁ„o
+--fun√ß√£o auxiliar para ordenar
+--PRE: recebe uma tabela e um tipo de ordena√ß√£o
 --POS: retorna a tabela ordenada
 
 function spairs(t, order)
@@ -124,8 +124,8 @@ function spairs(t, order)
     end
 end
 
---funÁ„o para imprimir a tabela 'word_freqs' em ordem decrescente de frequencias
---PRE: existe uma tabela 'word_freqs' n„o vazia
+--fun√ß√£o para imprimir a tabela 'word_freqs' em ordem decrescente de frequencias
+--PRE: existe uma tabela 'word_freqs' n√£o vazia
 --POS: a tabela foi impressa com sucesso
 
 function sort()
@@ -146,8 +146,8 @@ end
 
 
 --programa principal
---cada uma das funÁıes s„o chamadas em ordem e v„o alterando o valor das tabelas globais
---Ser„o impressas as 25 palavras mais frequentes
+--cada uma das fun√ß√µes s√£o chamadas em ordem e v√£o alterando o valor das tabelas globais
+--Ser√£o impressas as 25 palavras mais frequentes
 
 read_file(arg[1])
 filter_chars_and_normalize()
