@@ -1,0 +1,10 @@
+Diario de projeto
+Lucas Debatin e Guilherme Marques
+04/05/2017
+versão 1.0
+
+27/04/2017 - lemos os programas e decidimos quais seriam traduzidos
+01/05/2017 - início da implementação do cookbook
+02/05/2017 - implementação do tantrum e do cookbook
+03/05/2017 - implementação do the one e the c flow
+04/05/2017 - correções finais e elaboração da documentação
