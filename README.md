@@ -3,11 +3,7 @@
 Tradução de 4 programas de python para lua, seguindo as 6 regras de engenharia de software, dentre os programas disponíveis em:
 https://github.com/crista/exercises-in-programming-style
 
-os 4 programas são:
-Cookbook
-The c flow
-Tantrum
-The one
+os 4 programas são: Cookbook, The c flow, Tantrum, The one
 
 Para executar cada um dos programas, siga os passos:
 1. Abra o cmd
