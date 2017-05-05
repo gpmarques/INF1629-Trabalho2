@@ -1,7 +1,7 @@
 --Cookbook
 --Lucas Debatin e Guilherme Marques
 --03/05/2017
---versão 1
+--versÃ£o 1
 
 
 
@@ -11,7 +11,7 @@ data = {}
 words = {}
 word_freqs = {}
 
---funções auxiliares
+--funÃ§Ãµes auxiliares
 
 function split(s, delimiter)
     result = {}
@@ -62,7 +62,7 @@ end
 
 --preenche o array de frequencias
 --assertiva de entrada: existe um array vazio
---assertiva de saída: o array preenchido em que cada palavra tem um valor indicando sua frequência
+--assertiva de saÃ­da: o array preenchido em que cada palavra tem um valor indicando sua frequÃªncia
 
 function frequencies()
 
@@ -77,7 +77,7 @@ function frequencies()
 
 end
 
---função auxiliar para ordenar
+--funÃ§Ã£o auxiliar para ordenar
 
 function spairs(t, order)
     -- collect the keys
