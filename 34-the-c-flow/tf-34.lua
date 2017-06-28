@@ -105,3 +105,4 @@ else
 end
 
 for key, value in pairs(sort(frequencies(extract_words("input.txt")))) do print(key,value) end
+-- comentarios no pull-request (Roxana)
