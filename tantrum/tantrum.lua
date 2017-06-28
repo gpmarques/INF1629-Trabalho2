@@ -1,16 +1,16 @@
 --Tantrum
 --Lucas Debatin e Guilherme Marques
 --04/05/2017
---vers„o 1.0
+--vers√£o 1.0
 --192 linhas
 
---Nesse estilo de programaÁ„o utiliza-se assertivas e funÁıes para detectarem erros e assim facilitar a identificaÁ„o dos mesmos.
---Caso alguma das condiÁıes estabelecidas n„o seja satisfeita, o programa È imediatamente abortado
+--Nesse estilo de programa√ß√£o utiliza-se assertivas e fun√ß√µes para detectarem erros e assim facilitar a identifica√ß√£o dos mesmos.
+--Caso alguma das condi√ß√µes estabelecidas n√£o seja satisfeita, o programa √© imediatamente abortado
 
--- funÁ„o auxiliar
+-- fun√ß√£o auxiliar
 
---funÁ„o para dividir uma string de palavras em diversas strings menores
---PRE: uma string n„o vazia e um caractere para servir de delimitador
+--fun√ß√£o para dividir uma string de palavras em diversas strings menores
+--PRE: uma string n√£o vazia e um caractere para servir de delimitador
 --POS: retorna uma string dividida com diversas substrings
 
 function split(s, delimiter)
@@ -21,9 +21,9 @@ function split(s, delimiter)
     return result;
 end
 
---funÁ„o para dividir uma string de palavras em diversas strings menores
+--fun√ß√£o para dividir uma string de palavras em diversas strings menores
 --PRE: um path valido de um arquivo
---POS: retorna uma tabela de strings com as palavras dividas em substrings, todas as strings estar„o com letra min˙scula.
+--POS: retorna uma tabela de strings com as palavras dividas em substrings, todas as strings estar√£o com letra min√∫scula.
 --As assertivas garantem que o path esteja correto.
 
 function extract_words(path_to_file)
@@ -52,10 +52,10 @@ function extract_words(path_to_file)
     return word_list
 end
 
---funÁ„o para remover stop words de uma tabela
---PRE: um tabela n„o vazia de strings
+--fun√ß√£o para remover stop words de uma tabela
+--PRE: um tabela n√£o vazia de strings
 --POS: retorna a mesma tabela de strings com as stop words removidas
---As assertivas garantem que a tabela seja v·lida.
+--As assertivas garantem que a tabela seja v√°lida.
 
 function remove_stop_words(word_list)
     assert(type(word_list) == "table", "I need a table!")
@@ -83,10 +83,10 @@ function remove_stop_words(word_list)
 
 end
 
---funÁ„o para calcular a frequencia de palavras numa tabela
---PRE: uma tabela n„o vazia de strings
+--fun√ß√£o para calcular a frequencia de palavras numa tabela
+--PRE: uma tabela n√£o vazia de strings
 --POS: retorna uma tabela com palavras e o numero de ocorrencias de cada palavra
---As assertivas garantem que a tabela seja v·lida
+--As assertivas garantem que a tabela seja v√°lida
 
 function frequencies(word_list)
     assert(type(word_list) == "table", "I need a table!")
@@ -105,8 +105,8 @@ function frequencies(word_list)
     return word_freqs
 end
 
---funÁ„o auxiliar para ordenar
---PRE: recebe uma tabela e um tipo de ordenaÁ„o
+--fun√ß√£o auxiliar para ordenar
+--PRE: recebe uma tabela e um tipo de ordena√ß√£o
 --POS: retorna a tabela ordenada
 
 function spairs(t, order)
@@ -132,10 +132,10 @@ function spairs(t, order)
     end
 end
 
---funÁ„o para imprimir uma tabela de palavras em ordem decrescente de frequencia
+--fun√ß√£o para imprimir uma tabela de palavras em ordem decrescente de frequencia
 --PRE: uma tabela que tenha strings como 'keys' e um valor associado a cada uma representando sua frequencia
 --POS: imprime a tabela e ordem e retorna a mesma
---As assertivas garantem que a tabela seja v·lida
+--As assertivas garantem que a tabela seja v√°lida
 
 function sort(word_freq)
 
@@ -162,10 +162,10 @@ function sort(word_freq)
 	return word_freq
 end
 
---funÁ„o principal
---essa funÁ„o chamar· todas as outras passando como par‚metro um path lido como argumento no teclado
---as assertivas garantir„o que o argumento È v·lido, que a tabela de frequÍncias È v·lida e que ela possui mais de 25 palavras.
---Ser„o impressas as 25 palavras mais frequentes
+--fun√ß√£o principal
+--essa fun√ß√£o chamar√° todas as outras passando como par√¢metro um path lido como argumento no teclado
+--as assertivas garantir√£o que o argumento √© v√°lido, que a tabela de frequ√™ncias √© v√°lida e que ela possui mais de 25 palavras.
+--Ser√£o impressas as 25 palavras mais frequentes
 
 xpcall(function ()
 
@@ -190,3 +190,5 @@ xpcall(function ()
 			print(debug.traceback())
 
 		end)
+
+-- comentarios no pull-request (Roxana)
