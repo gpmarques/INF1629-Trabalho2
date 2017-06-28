@@ -148,3 +148,5 @@ tf_the_one:bind(frequencies)
 tf_the_one:bind(sort)
 tf_the_one:bind(top25_freqs)
 tf_the_one:printme()
+
+--ver comentarios no pull-request (Roxana)
